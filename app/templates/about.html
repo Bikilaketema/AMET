@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}About us{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+{% endblock %}
+
+{% block content %}
+    <!-- Your pages content here -->
+    <body>
+        <div class="containerabt">
+        <main>
+            <section class="about-us">
+              <div class="container">
+                <h1>About Us</h1>
+                <p>"Welcome to AMET.com, the leading online marketplace that seamlessly
+                    connects buyers and sellers from around the world. At AMET.com, we
+                    are dedicated to providing a robust platform that offers a user-friendly
+                    experience for individuals and businesses alike.
+    
+                    Our vision is to revolutionize the way people buy and sell products and
+                    services, making it convenient, secure, and efficient. With a focus on
+                    cutting-edge software engineering and innovative technologies, we have
+                    developed a state-of-the-art online marketplace that caters to the diverse
+                    needs of our global user base.
+                    
+                    As a team of highly skilled software engineers, designers, and business
+                    professionals, we have meticulously crafted AMET.com to ensure a seamless
+                    and intuitive user interface. Our platform is built on the principles of
+                    reliability, scalability, and security, leveraging the latest advancements
+                    in web development and database management systems.
+                    
+                    At AMET.com, we understand the importance of trust and transparency in the
+                    online marketplace ecosystem. To ensure the safety of our users, we have 
+                    implemented stringent user authentication protocols and robust identity
+                    verification processes. We also provide a secure payment gateway integration
+                    that safeguards sensitive financial information, enabling hassle-free transactions.
+                    
+                    In addition to our commitment to providing a superior user experience, we
+                    continuously strive to foster a thriving community of buyers and sellers.
+                    Through our comprehensive review and rating system, users can make informed
+                    decisions, build trust, and establish long-lasting business relationships.
+                    
+                    We believe in continuous improvement and innovation. Our dedicated software
+                    engineering team is consistently working behind the scenes to enhance our
+                    platform's performance, introduce new features, and stay ahead of emerging
+                    industry trends. We value user feedback and actively incorporate it into
+                    our development cycle to ensure that AMET.com remains at the forefront of
+                    the online marketplace landscape.
+                    
+                    Whether you are an individual looking for unique products or a business
+                    seeking to expand your market reach, AMET.com is here to serve your needs.
+                    Join us today and experience the seamless integration of business and software
+                    engineering expertise, empowering you to navigate the dynamic world of
+                    online commerce with ease.
+                    
+                    Thank you for choosing AMET.com, where buying and selling meet excellence."</p>
+                </div>
+            </section>
+          </main>
+    </div>
+    </body>
+
+    {% endblock %}

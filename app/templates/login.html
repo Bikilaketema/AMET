@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Log in{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+{% endblock %}
+
+{% block content %}
+    <!-- Your pages content here -->
+    <body>
+        <div class="container">
+        <h1>Login</h1>
+        {% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+        <form method="post" action="/login">
+            <label>Email:</label>
+            <input type="email" name="email" value="{{ email }}" required autocomplete="off">
+            <br>
+            <label>Password:</label>
+            <input type="password" name="password" required autocomplete="new-password">
+            <button type="submit">Login</button>
+          </form>
+          
+        </div>
+    </body>
+
+    {% endblock %}

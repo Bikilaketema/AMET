@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+<script src="script.js"></script>
+
+
+{% endblock %}
+
+{% block content %}
+    <!-- Your index.html content here -->
+    <body class="slide-in-from-right">
+        <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="slide-in-right">Welcome to AMET</h1>
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="slide-in-right" id="ban">
+                <p>Discover a world of amazing products and services.</p>
+                <a href="/index" class="button">Get Started</a>
+            </div>
+
+
+            <section id="features">
+                <h2>Why Choose Amet.com?</h2>
+                <ul>
+                    <li>Wide selection of high-quality products</li>
+                    <li>Fast and reliable shipping</li>
+                    <li>Secure and easy payment options</li>
+                    <li>Excellent customer support</li>
+                </ul>
+            </section>
+        
+            <section id="testimonials">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial">
+                    <blockquote>"Amet.com has changed the way I shop. The products are top-notch, and the customer service is outstanding!"</blockquote>
+                    <cite>- John Doe</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"I love the convenience and variety offered by Amet.com. It's my go-to online shopping destination now!"</blockquote>
+                    <cite>- Jane Smith</cite>
+                </div>
+            </section>
+        
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Have a question? Reach out to our friendly support team.</p>
+                <p>Email: info@amet.com</p>
+                <p>Phone: 123-456-7890</p>
+            </section>
+
+        </section>
+
+    </body>
+    
+
+{% endblock %}

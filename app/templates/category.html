@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Category{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='category.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{category}}</h1>
+        <div class="product-list">
+            {% for item in products %}
+            <div class="product-card">
+                <img src="{{ item.image }}" alt="{{ item.title }}">
+                <h3>{{ item.title[:30] + '...' }}</h3>
+                <p>{{ item.description[:50] + '...' }}</p>
+                <p>Price: ${{ item.price }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

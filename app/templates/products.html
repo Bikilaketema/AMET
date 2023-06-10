@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Category{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='product.css') }}">
+{% endblock %}
+
+{% block content %}
+    <!-- Your pages content here -->
+    <body>
+        <div class="container">
+        <h1>Product Categories</h1>
+        <div class="categories-grid">
+            {% for category in categories %}
+            <div class="category-card">
+                <h3>{{ category }}</h3>
+                <img src="/static/category-images/{{ category }}.jpg" alt="{{ category }}">
+                <a href="/category/{{ category }}">View Products</a>
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+    </body>
+
+    {% endblock %}

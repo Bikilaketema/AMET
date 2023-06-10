@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact us{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+{% endblock %}
+
+{% block content %}
+    <!-- Your pages content here -->
+    <div class="containercon">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Our dedicated team is here to assist you.</p>
+        
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br>
+          
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" required></textarea><br><br>
+          
+          <button type="submit">Submit</button><br>
+        </form>
+      </div>    
+
+    {% endblock %}
