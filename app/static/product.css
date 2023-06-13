@@ -187,3 +187,23 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
+.category-card img {
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.category-card a {
+
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+
+}

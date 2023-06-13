@@ -14,7 +14,7 @@
             {% for category in categories %}
             <div class="category-card">
                 <h3>{{ category }}</h3>
-                <img src="/static/category-images/{{ category }}.jpg" alt="{{ category }}">
+                <img src="{{ url_for('static', filename='icons/' + category + '.png') }}" alt="{{ category }}" class="categoryicons">
                 <a href="/category/{{ category }}">View Products</a>
             </div>
             {% endfor %}
