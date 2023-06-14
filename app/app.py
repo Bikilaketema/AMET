@@ -8,7 +8,6 @@ import json
 import os
 
 app = Flask(__name__, static_folder='static')
-app.secret_key = 'your-secret-key'  # Add a secret key for session management
 
 # Initialize Firebase Admin SDK
 cred = credentials.Certificate('/home/bicky/AMET/app/serviceAccountKey.json')
@@ -19,7 +18,7 @@ firebase_admin.initialize_app(cred)
 def landing():
     return render_template('landing.html')
 
-
+#route to display the products listing page
 @app.route('/index')
 def index():
     # Fetch product data from the FakeStore API
@@ -28,6 +27,7 @@ def index():
 
     return render_template('index.html', products=products)
 
+#root to display the products category page
 @app.route('/products')
 def products():
     # Fetch product categories from the FakeStore API
@@ -43,40 +43,17 @@ def category(category):
     products = response.json()
     return render_template('category.html', category=category, products=products)
 
+#route to display the about page
 @app.route('/about')
 def about():
     return render_template('about.html')
 
-
+#route to display the contact us page
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
 
-
-""" # Function to fetch product details from the Fake Store API
-def get_product_details(product_id):
-    url = f'https://fakestoreapi.com/products/{product_id}'
-    response = requests.get(url)
-    
-    if response.status_code == 200:
-        product = response.json()
-        return product
-    else:
-        return None
-
-# Route for product detail page
-@app.route('/product/<int:product_id>')
-def product_detail(product_id):
-    # Retrieve product details from the Fake Store API
-    product = get_product_details(product_id)
-
-    if product is None:
-        return render_template('404.html'), 404
-
-    return render_template('product_detail.html', product=product) """
-
-
-
+#route to display the sign up page
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     if request.method == 'POST':
@@ -132,7 +109,7 @@ def signup():
 
     return render_template('signup.html')
 
-
+#route to display the log in page
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -167,7 +144,7 @@ def login():
 
 
 
-
+#route to display the dashboard
 @app.route('/dashboard')
 def dashboard():
     user_id = session.get('user')
@@ -179,6 +156,7 @@ def dashboard():
     email = user.email
     return render_template('dashboard.html', email=email)
 
+#route to logout the user from the platform
 @app.route('/logout')
 def logout():
     session.pop('user', None)
