@@ -174,7 +174,7 @@ def dashboard():
     if not user_id:
         return redirect('/login')
 
-    # Get user data from Firebase
+    # Get user data from Firebase database
     user = auth.get_user(user_id)
     email = user.email
     return render_template('dashboard.html', email=email)
