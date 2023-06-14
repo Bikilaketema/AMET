@@ -9,7 +9,7 @@ button {
     width: 100px;
   }
 
-  a {
+  button a {
     text-decoration: none;
     color: #fff;
   }

@@ -3,6 +3,7 @@
 {% block title %}Log in{% endblock %}
 
 {% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
 {% endblock %}
 
@@ -20,7 +21,7 @@
             <br>
             <label>Password:</label>
             <input type="password" name="password" required autocomplete="new-password">
-            <button type="submit">Login</button>
+            <button type="submit" class="log">Login</button>
           </form>
           
         </div>

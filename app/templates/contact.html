@@ -2,6 +2,7 @@
 
 {% block title %}Contact us{% endblock %}
 {% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
 {% endblock %}
 
@@ -21,7 +22,7 @@
           <label for="message">Message:</label><br>
           <textarea id="message" name="message" required></textarea><br><br>
           
-          <button type="submit">Submit</button><br>
+          <button type="submit" class="sub">Submit</button><br>
         </form>
       </div>    
 

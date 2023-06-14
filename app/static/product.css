@@ -1,68 +1,4 @@
-/* styles.css */
-
-/* Header */
-header {
-    background-color: #ff6e00;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 50px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background-color: #f9f9f9;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 18px;
-    color: #000000;
-  }
-  
-  .hero-content .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  /* Featured Products Section */
+/* Featured Products Section */
   .featured-products {
     padding: 50px;
     text-align: center;
@@ -103,42 +39,7 @@ header {
     color: #000000;
   }
   
-  .product-category {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
   
-  .product-category:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .product-category img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .product-category h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .product-category p {
-    font-size: 14px;
-    color: #888;
-  }
-
-  .contact img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
   
   .product-categories {
     max-width: 90%;

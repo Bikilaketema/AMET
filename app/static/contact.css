@@ -1,32 +1,3 @@
-/* contact.css */
-
-/* Header */
-header {
-  background-color: #ff6e00;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000000;
-}
-
 /* Body */
 body {
   font-family: Arial, sans-serif;
@@ -93,8 +64,8 @@ button {
   font-size: 16px;
 }
 
-button:hover {
-  background-color: #45a049;
+.sub:hover {
+  background-color: #1a5a1d;
 }
 
 p {

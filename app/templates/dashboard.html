@@ -3,6 +3,7 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
 {% endblock %}
 
@@ -10,6 +11,7 @@
     <!-- Your pages content here -->
     <!DOCTYPE html>
 <body>
+    <div class="row">
     <div class="container">
     <h1>{{ email }}, now you can buy what you want!</h1>
     <p>You have successfully logged in.</p>
@@ -17,6 +19,7 @@
     <br>
     <br>
     <button ><a href="/logout">Logout</a></button>
+    </div>
     </div>
 </body>
 

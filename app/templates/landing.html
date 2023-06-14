@@ -13,18 +13,23 @@
 {% block content %}
     <!-- Your index.html content here -->
     <body>
+        
         <div class="container">
-        <section class="hero">
+       
+            <section class="hero">
             <div class="hero-content">
-                <h1>Welcome to AMET</h1>
-                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" id="ban">
+                <h1>Welcome</h1>
+                <img src="{{ url_for('static', filename='images/ladimg.png') }}" alt="Logo" id="ban" class="ladimg img-fluid d-block mx-auto">
                 <p>Discover a world of amazing products and services.</p>
-                <a href="/index" class="button">Get Started</a>
+                <a href="/index" class="gets">Get Started</a>
+                <br>
             </div>
 
 
             <section id="features">
                 <h2>Why Choose Amet.com?</h2>
+                <br>
+                <hr/>
                 <ul>
                     <li>Wide selection of high-quality products</li>
                     <li>Fast and reliable shipping</li>
@@ -60,6 +65,10 @@
             </section>
 
         </section>
+
+        </div>
+
+
 
     </body>
     
