@@ -39,4 +39,3 @@ Once they open the website, users can perform the following actions:
 
 #NB
 This project is underdevelopment.
-You can access the deployed website at https://amet.noahgs.tech
