@@ -39,3 +39,4 @@ Once they open the website, users can perform the following actions:
 
 #NB
 This project is underdevelopment.
+Make sure you are connceted to an internet before trying to open the website.
